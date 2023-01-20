@@ -8,11 +8,11 @@ h1 {
 
 video {
 	border-style: solid;
-	width: 160px;
+	width: 240px;;
 	transition: width 0.5s;
 }
 
 video:hover {
-	width: 200px;
+	width: 300px;
 	cursor: pointer;
 }
