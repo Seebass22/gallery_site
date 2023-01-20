@@ -1,7 +1,17 @@
 body {
-	background-color: #141d31;
+	background-color: #000000;
 }
 
 h1 {
 	color: #46609b
+}
+
+video {
+	border-style: solid;
+	width: 160px;
+	transition: width 0.5s;
+}
+
+video:hover {
+	width: 200px;
 }
