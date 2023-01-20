@@ -13,13 +13,27 @@
 		<div class="container"><h1>Nannou Gallery</h1></div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+		<script>
+			function showDemo(name) {
+				var div = document.getElementById("nannou-embed");
+				var embed = document.createElement("EMBED"); 
+				embed.width = 1200;
+				embed.height = 1200;
+				embed.type = "text/html";
+				embed.src = "nannou/" + name + "/index.html";
+				div.appendChild(embed);
+			}
+		</script>
+
 		<div class="container-lg">
 			<video src="videos/thumbnails4/orthographic_cube_loop_thumbnail.mp4" class="rounded" loop autoplay></video>
 			<video src="videos/thumbnails4/random_line_cube_thumbnail.mp4" class="rounded" loop autoplay></video>
 			<video src="videos/thumbnails4/squishy_cube_loop_thumbnail.mp4" class="rounded" loop autoplay></video>
 			<video src="videos/thumbnails4/squishy_line_cube_loop__thumbnail.mp4" class="rounded" loop autoplay></video>
-			<video src="videos/thumbnails4/newest_waves___thumbnail.mp4" class="rounded" loop autoplay></video>
-			<embed type="text/html" src="nannou/wavy_sphere/index.html" width="1200" height="1200">
+			<video src="videos/thumbnails4/newest_waves___thumbnail.mp4" class="rounded" loop autoplay onclick="showDemo('wavy_sphere')"></video>
+			<!-- <embed type="text/html" src="nannou/wavy_sphere/index.html" width="1200" height="1200"> -->
+			<div id="nannou-embed">
+			</div>
 		</div>
 	</body>
 </html>
