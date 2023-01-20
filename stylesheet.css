@@ -14,4 +14,5 @@ video {
 
 video:hover {
 	width: 200px;
+	cursor: pointer;
 }
