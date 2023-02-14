@@ -24,6 +24,10 @@
 				div.innerHTML = ""
 				div.appendChild(embed);
 			}
+
+			function create_thumbnails() {
+				projects = ["orthographic_cube", "random_cube"];
+			}
 		</script>
 
 		<div class="container-lg">
@@ -37,6 +41,8 @@
 			<video src="videos/generated_thumbnails/white_wave_sphere_thumbnail.webm" class="rounded" loop autoplay muted onclick="showDemo('white_wave_sphere')"></video>
 			<video src="videos/generated_thumbnails/sphere_outwards_waves_thumbnail.webm" class="rounded" loop autoplay muted onclick="showDemo('sphere_outwards_waves')"></video>
 			<video src="videos/generated_thumbnails/red_firework_sphere_thumbnail.webm" class="rounded" loop autoplay muted onclick="showDemo('red_firework_sphere')"></video>
+			<video src="videos/generated_thumbnails/random_walk_lines_thumbnail.webm" class="rounded" loop autoplay muted onclick="showDemo('random_walk_lines')"></video>
+			<video src="videos/generated_thumbnails/random_walk_rotation_thumbnail.webm" class="rounded" loop autoplay muted onclick="showDemo('random_walk_rotation')"></video>
 			<div id="nannou-embed">
 			</div>
 		</div>
